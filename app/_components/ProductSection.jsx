@@ -16,7 +16,7 @@ const ProductSection = () => {
         <Button title={"Shop New Drops"} />
       </div>
 
-      <div className="flex items-center justify-between gap-2 lg:gap-3 flex-wrap">
+      <div className="flex flex-wrap justify-between items-center gap-2 lg:flex-nowrap lg:gap-3">
         {isLoading
           ? Array.from({ length: 4 }).map((_, index) => (
               <ProductSkeleton key={index} />

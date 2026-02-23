@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #e7e7e3;
+  --primary: #4a69e2;
+  --light: #fafafa;
+  --dark-gray: #232321;
+  --accent: #ffa52f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-light: var(--light);
+  --color-primary: var(--primary);
+  --color-darkgray: var(--dark-gray);
+  --color-accent: var(--accent);
+  --font-rubik: var(--font-rubik);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* Updated Pagination Styles */
+.mobile-pagination .swiper-pagination-bullet,
+.desktop-pagination .swiper-pagination-bullet {
+  width: 48px !important;
+  height: 6px;
+  border-radius: 8px;
+  background: #c4c4c4;
+  opacity: 1;
+  margin: 0 4px !important;
+  cursor: pointer;
+}
+
+.mobile-pagination .swiper-pagination-bullet-active,
+.desktop-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+

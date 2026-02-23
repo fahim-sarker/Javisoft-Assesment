@@ -38,7 +38,7 @@ const ReviewSection = () => {
         <Button title={"See all"} />
       </div>
 
-      <div className="flex items-center gap-4 flex-wrap">
+      <div className="flex flex-wrap lg:flex-nowrap items-center gap-4">
         {reviewData?.map((review) => (
           <ReviewCard key={review.id} review={review} />
         ))}

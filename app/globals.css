@@ -21,7 +21,6 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-/* Updated Pagination Styles */
 .mobile-pagination .swiper-pagination-bullet,
 .desktop-pagination .swiper-pagination-bullet {
   width: 48px !important;

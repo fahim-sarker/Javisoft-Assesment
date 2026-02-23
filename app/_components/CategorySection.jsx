@@ -34,22 +34,20 @@ const CategorySection = () => {
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               disabled={isBeginning}
-              className={`p-3 bg-background text-darkgray rounded-md transition-colors ${
-                isBeginning
+              className={`p-3 bg-background text-darkgray rounded-md transition-colors ${isBeginning
                   ? "opacity-50 cursor-not-allowed "
                   : "opacity-100 cursor-pointer  hover:bg-white"
-              }`}
+                }`}
             >
               <HiChevronLeft size={10} />
             </button>
             <button
               onClick={() => swiperRef.current?.slideNext()}
               disabled={isEnd}
-              className={`p-3 bg-background text-darkgray rounded-md transition-colors ${
-                isEnd
+              className={`p-3 bg-background text-darkgray rounded-md transition-colors ${isEnd
                   ? "opacity-50 cursor-not-allowed "
                   : "opacity-100 cursor-pointer hover:bg-white"
-              }`}
+                }`}
             >
               <HiChevronRight size={10} />
             </button>
@@ -81,19 +79,19 @@ const CategorySection = () => {
         >
           {isLoading
             ? Array.from({ length: 2 }).map((_, index) => (
-                <SwiperSlide key={index}>
-                  <CategorySkeleton />
-                </SwiperSlide>
-              ))
+              <SwiperSlide key={index}>
+                <CategorySkeleton />
+              </SwiperSlide>
+            ))
             : categories?.map((cat, index) => (
-                <SwiperSlide key={index}>
-                  <CartegoryCard
-                    cat={cat}
-                    index={index}
-                    activeIndex={activeIndex}
-                  />
-                </SwiperSlide>
-              ))}
+              <SwiperSlide key={index}>
+                <CartegoryCard
+                  cat={cat}
+                  index={index}
+                  activeIndex={activeIndex}
+                />
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
     </div>

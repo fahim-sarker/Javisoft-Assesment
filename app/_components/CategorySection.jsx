@@ -27,7 +27,7 @@ const CategorySection = () => {
   return (
     <div className="bg-darkgray min-h-screen lg:min-h-206 mb-10 lg:mb-20">
       <div className="container mx-auto">
-        <div className="flex justify-between items-end pt-[30px] mb-[30px] lg:pt-22.5 lg:pb-22.5">
+        <div className="flex justify-between items-end pt-[30px] mb-[30px] lg:pt-22.5 lg:pb-22.5 px-4">
           <SectionTitle className={"text-white"} title={"Categories"} />
 
           <div className="flex gap-2">

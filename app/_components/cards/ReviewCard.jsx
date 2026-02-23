@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ReviewCard({ review }) {
   return (
-    <div className="max-w-107 w-full overflow-hidden rounded-[2.5rem] bg-white shadow-lg">
+    <div className="max-w-107 w-full overflow-hidden rounded-[2.5rem] bg-white shadow-lg group">
       <div className="p-4 lg:p-8 pb-6">
         <div className="flex items-start justify-between">
           <div className="space-y-2">
@@ -39,7 +39,7 @@ export default function ReviewCard({ review }) {
       </div>
 
      
-      <div className="relative h-60 lg:h-80 w-full">
+      <div className="relative h-60 lg:h-80 w-full group-hover:scale-110 duration-300 ease-in-out">
         <Image
           src={review?.product_image }
           alt={review?.product_name || "Product Image"}

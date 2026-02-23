@@ -7,6 +7,7 @@ const nextConfig = {
       { protocol: "https", hostname: "i.ibb.co" },
       { protocol: "https", hostname: "pravatar.cc" },
       { protocol: "https", hostname: "placeimg.com" },
+      { protocol: "https", hostname: "trial.co.id" },
     ],
   },
 };

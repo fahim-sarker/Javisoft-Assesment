@@ -22,7 +22,7 @@ const ProductSection = () => {
               <ProductSkeleton key={index} />
             ))
           : products
-              ?.slice(0, 4)
+              ?.slice(10,14)
               .map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}

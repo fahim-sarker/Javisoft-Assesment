@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export default function ProductCard({ product }) {
   return (
-    <div className="w-full max-w-40 lg:max-w-80 min-h-[200px] lg:min-h-121.5">
+    <div className="w-full max-w-40 lg:max-w-80 min-h-[200px] lg:min-h-121.5 group">
       <div className="relative overflow-hidden rounded-4xl  border-4 lg:border-10 border-light">
         <p className="absolute left-0 top-0 z-10 rounded-tl-3xl rounded-br-3xl bg-primary w-12 h-8 px-4 flex items-center justify-center py-3 text-xs font-semibold text-white">
           New
         </p>
 
-        <div className="relative h-[150px] lg:h-87.5 w-full ">
+        <div className="relative h-[150px] lg:h-87.5 w-full group-hover:scale-105 cursor-pointer duration-300 ease-in-out">
           <Image
             src={product?.images[0]}
             alt="Adidas 4DFWD x Parley Running Shoes"

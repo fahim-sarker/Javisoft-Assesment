@@ -32,7 +32,7 @@ const reviewData = [
 
 const ReviewSection = () => {
   return (
-    <div className="container mb-10 md:pb-20 flex flex-col gap-4 lg:gap-8 xl:px-0 px-4">
+    <div className="container mx-auto mb-10 md:pb-20 flex flex-col gap-4 lg:gap-8 xl:px-0 px-4">
       <div className="flex items-end justify-between">
         <SectionTitle title={"Reviews"} />
         <Button title={"See all"} />

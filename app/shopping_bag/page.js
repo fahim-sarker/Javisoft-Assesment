@@ -3,7 +3,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Delete, DownIcon, Heart } from "../_components/svg/svgContainer";
-import { removeFromCart } from "@/feature/product/CartSlice"; // make sure path is correct
+import { removeFromCart } from "@/feature/product/CartSlice";
 
 const CartPage = () => {
   const dispatch = useDispatch();
@@ -22,7 +22,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className="min-h-screen container p-4 md:p-12 text-gray-900">
+    <div className="min-h-screen container mx-auto p-4 text-gray-900">
       {/* Header */}
       <header className="mb-8">
         <h1 className="text-2xl font-bold uppercase tracking-tight">
@@ -61,11 +61,11 @@ const CartPage = () => {
                   className="flex flex-col gap-6 sm:flex-row mb-6"
                 >
                   {/* Product Image */}
-                  <div className="relative h-48 w-full shrink-0 overflow-hidden rounded-xl bg-gray-100 sm:h-40 sm:w-40">
+                  <div className="relative h-48 w-full sm:h-40 sm:w-40 rounded-xl overflow-hidden bg-gray-100">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="h-full w-full object-cover"
+                      style={{ objectFit: "cover" }}
                     />
                   </div>
 

@@ -64,7 +64,7 @@ const SingleProduct = ({ id }) => {
   };
   return (
     <div className="min-h-screen p-4 md:p-10 font-sans text-darkgray ">
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-10">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-10">
         <div className="lg:col-span-8">
           <div className="block lg:hidden space-y-4">
             <div className="relative aspect-square bg-white rounded-3xl overflow-hidden shadow-sm">

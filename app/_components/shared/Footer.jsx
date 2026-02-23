@@ -11,7 +11,7 @@ import { FaPlus } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="container mx-auto">
       <div className="min-h-136.25 bg-primary rounded-[24px] lg:rounded-[48px] p-4 lg:px-18 lg:py-16 flex flex-col lg:flex-row lg:justify-between">
         <div className="max-w-127.5 flex flex-col gap-8">
           <div className="flex flex-col gap-4">
